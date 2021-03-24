@@ -1,26 +1,35 @@
 <html>
     <head>
-        <link href="login.css" rel="stylesheet" type="text/css" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="./css/login.css" rel="stylesheet" type="text/css" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <section>
-            <h1>instagram</h1>
-            <input class="section-width type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
-            <input class="section-width  type="text" placeholder="비밀번호"/>
-            <button class="section-width">로그인</button>
-            <div class="section-width">
-                <div></div>
-                <span>또는</span>
-                <div></div>
+        <div id="mainRight-box">
+            <section>
+                <h1>instagram</h1>
+                <input class="section-width type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+                <input class="section-width  type="text" placeholder="비밀번호"/>
+                <button class="section-width">로그인</button>
+                <div class="section-width">
+                    <div></div>
+                    <span>또는</span>
+                    <div></div>
+                </div>
+                <div class="section-width login-facebook">
+                    <span></span><a>facebook으로 로그인</a>
+                </div>
+                <div class="section-width" id="fogot-passwd"><a>비밀번호를 잊으셨나요?</a></div>
+            </section>
+            <div class="section-width" id="sign-up">
+                <p>계정이 없으신가요? <a>가입하기</a></p>
             </div>
-            <div class="section-width login-facebook">
-                <span></span><a>facebook으로 로그인</a>
+            <div class="section-width" id="app-down">
+                <p class="section-width">앱을 다운로드하세요.</p>
+                <div id="app-img">
+                    <img alt="appStore-img" />
+                    <img alt="googlePlay-img" />
+                </div>
             </div>
-            <div class="section-width fogot-passwd"><a>비밀번호를 잊으셨나요?</a></div>
-        </section>
-        <div class="section-width">
-            <span>계정이 없으신가요?<a>가입하기</a></span>
         </div>
     </body>
 </html>
