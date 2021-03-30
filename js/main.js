@@ -3,27 +3,33 @@ const commentUploadButton = document.getElementById('commentUpload');
 let checkNullEnter = false;
 
 window.onload = function(){
-    loginButton.disable = false;
 }
 
 function adjustHeight() {
     var textEle = document.querySelector('.commentUpBox textarea');
     textEle[0].style.height = 'auto';
-    alert(textEle[0].style.height);
+    console.log(textEle[0].style.height);
     var textEleHeight = textEle.prop('scrollHeight');
-    alert(textEleHeight);
+    console.log(textEleHeight);
     textEle.css('height', textEleHeight);
   };
 
 commentValue.addEventListener('keydown', function(e){
-    alert(commentValue.value.length);
-    alert(e.keyCode);
+    console.log(commentValue.value.length);
+    console.log(e.keyCode);
+
+    if(e.keyCode === 13){
+        e.preventDefault();
+    }
+
     if(commentValue.value.length = 0 && e.keyCode === 13){
         checkNullEnter = true;
+        console.log(checkNullEnter);
     }else{
 
     }
 })
+
 
 commentValue.addEventListener('keyup', function(e){
     if(commentValue.value.length > 0){
@@ -45,7 +51,7 @@ commentValue.addEventListener('keyup', function(e){
 })
 
 commentUploadButton.addEventListener('click', function(){
-    alert(commentValue.value);
+    console.log(commentValue.value);
     
     if(commentValue.value.length > 0){
         
